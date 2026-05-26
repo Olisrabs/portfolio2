@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --reveal-timing: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #e2e2e2;
+  cursor: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDy3FwyY4cZDGj8HSKm4zYDrG7tTaXMfCWzBXvSLx7zzl4dpNwwQon_wGkG2h2iuaEYMPhJ8nIqA7fjciD5VL9PvINpkZZpCxDCS4v87-qTLCo8ybFwYqpYS8A9mLHPc5Q42sL6pjNWede6puO22DVXCmovATMsVzxdyO1VQuQjkB88Z5im-rcXuCVzOte49RiMiJhRVzy_dWg5GeZejExNsh5fxaR5rC3eS9inan4zhFHDvDTIGlysO4TdCGysIVQ3FZKIGHIs");
+  background-repeat: repeat;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.6s var(--reveal-timing), background 0.4s ease;
+}
+
+.neon-glow-purple {
+  filter: blur(120px);
+  background: #9d03de;
+  opacity: 0.3;
+  will-change: transform;
+}
+
+.neon-glow-lime {
+  filter: blur(120px);
+  background: #abd600;
+  opacity: 0.2;
+  will-change: transform;
+}
+
+.custom-cursor {
+  width: 12px;
+  height: 12px;
+  background: #e8b3ff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transition: width 0.3s var(--reveal-timing), height 0.3s var(--reveal-timing), background 0.3s ease;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-glow {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(191, 64, 255, 0.15) 0%, transparent 70%);
+  position: fixed;
+  pointer-events: none;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  will-change: left, top;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s var(--reveal-timing), transform 1.2s var(--reveal-timing);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Stagger */
+.hero-title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.hero-title-line span {
+  display: block;
+  transform: translateY(110%);
+  transition: transform 1.4s var(--reveal-timing);
+}
+
+.loaded .hero-title-line span {
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.project-card:hover {
+  transform: scale(1.02) translateY(-8px);
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonials Scroll */
+#testimonials-container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.testimonial-item {
+  scroll-snap-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .hero-title-line span,
+  .project-card,
+  .bento-card {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.selection-card:hover .material-symbols-outlined {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
+}
+
+.step-transition {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animated-border {
+  position: relative;
+  overflow: hidden;
+}
+.animated-border::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, transparent, transparent, #BF40FF);
+  animation: borderRotate 6s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+.animated-border:hover::after {
+  opacity: 0.4;
+}
+@keyframes borderRotate {
+  100% { transform: rotate(360deg); }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  filter: blur(20px);
+  transform: translateY(30px);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-on-scroll.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.stagger-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.reveal-active,
+.stagger-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

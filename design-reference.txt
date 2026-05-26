@@ -1,0 +1,319 @@
+================================================================================
+  OLISRAB PORTFOLIO — DESIGN REFERENCE
+  Generated: 2026-05-21
+================================================================================
+
+
+────────────────────────────────────────────────────────────────────────────────
+  1. FONTS
+────────────────────────────────────────────────────────────────────────────────
+
+  DISPLAY / HEADLINE FONT
+  ─────────────────────────
+  Family  : Sora
+  Weights : 700 (Bold), 800 (Extra Bold)
+  Use     : All hero headlines, section titles, display text
+  Source  : Google Fonts — https://fonts.google.com/specimen/Sora
+
+  Token sizes (from Tailwind config):
+    display-xl        → 120px / Line-height: 110px / Weight: 800 / Letter-spacing: -0.04em
+    display-xl-mobile → 56px  / Line-height: 52px  / Weight: 800 / Letter-spacing: -0.04em
+    headline-lg       → 64px  / Line-height: 68px  / Weight: 700 / Letter-spacing: -0.02em
+    headline-lg-mobile→ 32px  / Line-height: 36px  / Weight: 700 / Letter-spacing: -0.02em
+
+
+  BODY / PARAGRAPH FONT
+  ─────────────────────────
+  Family  : Inter
+  Weights : 400 (Regular), 500 (Medium)
+  Use     : Body copy, descriptions, UI text
+  Source  : Google Fonts — https://fonts.google.com/specimen/Inter
+
+  Token sizes:
+    body-lg → 20px / Line-height: 32px / Weight: 400 / Letter-spacing: 0em
+    body-md → 16px / Line-height: 24px / Weight: 400 / Letter-spacing: 0.01em
+
+
+  MONOSPACE / LABEL FONT
+  ─────────────────────────
+  Family  : JetBrains Mono
+  Weight  : 500
+  Use     : Labels, caps tags, navigation, step indicators, form labels
+  Source  : Google Fonts — https://fonts.google.com/specimen/JetBrains+Mono
+
+  Token size:
+    label-caps → 12px / Line-height: 16px / Weight: 500 / Letter-spacing: 0.2em
+
+
+────────────────────────────────────────────────────────────────────────────────
+  2. COLORS
+────────────────────────────────────────────────────────────────────────────────
+
+  BRAND COLORS
+  ─────────────────────────
+  Primary Accent (Purple) : #BF40FF  — Used on buttons, glows, CTAs, form focus
+  Secondary (Lavender)    : #E8B3FF  — Used on highlighted text, hover states
+  Tertiary (Lime)         : #ABD600  — Used on featured elements, success states
+  Tertiary Fixed          : #C3F400  — Brighter lime variant
+
+  SURFACE COLORS
+  ─────────────────────────
+  Page Background         : #0B0B0B  — Near-black body background
+  Surface                 : #121414  — Cards and section backgrounds
+  Surface Container       : #1E2020  — Slightly elevated surfaces
+  Surface Container Low   : #1A1C1C
+  Surface Container High  : #282A2B
+  Surface Container Highest:#333535
+  Surface Dim             : #121414
+  Surface Bright          : #37393A
+
+  TEXT COLORS
+  ─────────────────────────
+  On Surface (Primary)    : #E2E2E2  — Main readable text
+  On Surface Variant      : #C4C7C7  — Secondary/muted text
+  On Background           : #E2E2E2
+
+  SECONDARY CONTAINER
+  ─────────────────────────
+  Secondary Container     : #9D03DE  — Neon glow purple used in glows/blurs
+  On Secondary Container  : #F5D6FF
+  On Secondary            : #500074
+
+  OUTLINE COLORS
+  ─────────────────────────
+  Outline                 : #8E9192
+  Outline Variant         : #444748
+
+  GLASSMORPHISM
+  ─────────────────────────
+  Glass Panel Background  : rgba(255, 255, 255, 0.03)
+  Glass Panel Border      : rgba(255, 255, 255, 0.10)
+  Backdrop Blur           : blur(40px)
+
+  NEON GLOWS
+  ─────────────────────────
+  Purple Glow             : #9D03DE  (blur: 120px, opacity: 0.30)
+  Lime Glow               : #ABD600  (blur: 120px, opacity: 0.20)
+  Cursor Glow             : rgba(191, 64, 255, 0.15) radial-gradient
+
+
+────────────────────────────────────────────────────────────────────────────────
+  3. HEADLINE TEXT SIZES
+────────────────────────────────────────────────────────────────────────────────
+
+  Token              Size    Line Height  Weight  Letter Spacing
+  ─────────────────  ──────  ───────────  ──────  ──────────────
+  display-xl         120px   110px        800     -0.04em
+  display-xl-mobile   56px    52px        800     -0.04em
+  headline-lg         64px    68px        700     -0.02em
+  headline-lg-mobile  32px    36px        700     -0.02em
+  body-lg             20px    32px        400      0.00em
+  body-md             16px    24px        400      0.01em
+  label-caps          12px    16px        500      0.20em
+
+
+────────────────────────────────────────────────────────────────────────────────
+  4. ICONS
+────────────────────────────────────────────────────────────────────────────────
+
+  Library   : Google Material Symbols Outlined
+  Source    : https://fonts.google.com/icons
+  CDN Link  : https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined
+  Usage     : Loaded via <link> in index.html, used as <span class="material-symbols-outlined">
+
+  Icons used in the project:
+  ─────────────────────────
+  language          — Digital Ecosystem project type card
+  auto_awesome      — Brand Identity project type card
+  science           — R&D Lab project type card
+  arrow_forward     — Budget tier hover arrow
+  diamond           — Bespoke tier icon
+  bolt              — Generate Request button
+  send              — Submit Request button
+  north_east        — Featured project card arrow
+  arrow_downward    — Portfolio page scroll indicator (animated bounce)
+  check_circle      — Success state / success banner icon
+  error             — Error state / error banner icon
+  close             — Dismiss banner button
+  menu              — Mobile navigation hamburger
+  close (navbar)    — Mobile menu close button
+
+
+────────────────────────────────────────────────────────────────────────────────
+  5. SCROLL & ANIMATION EFFECTS
+────────────────────────────────────────────────────────────────────────────────
+
+  REVEAL ON SCROLL
+  ─────────────────────────
+  Class     : .reveal
+  Effect    : Elements fade in from translateY(40px) → translateY(0)
+  Duration  : 1.2s
+  Easing    : cubic-bezier(0.22, 1, 0.36, 1)  (custom spring ease)
+  Trigger   : IntersectionObserver in App.jsx adds .active class when element
+              enters the viewport
+
+  HERO PARALLAX FADE-OUT
+  ─────────────────────────
+  File      : Hero.jsx
+  Effect    : Hero content fades out + translates up as user scrolls down
+  Mechanism : scroll event listener modifies opacity and translateY inline
+  Factor    : scrollY / (viewportHeight * 0.8), capped at 1
+
+  HERO STAGGER ENTRANCE
+  ─────────────────────────
+  Class     : .hero-title-line / .hero-title-line span
+  Effect    : Each headline line animates from translateY(110%) → translateY(0)
+  Trigger   : .loaded class applied to body on mount
+  Delays    : 0.1s, 0.2s, 0.3s, 0.5s stagger between lines
+
+  AMBIENT PARALLAX GLOWS
+  ─────────────────────────
+  Effect    : Purple and lime blurred glow orbs move slightly on scroll
+  Mechanism : mousemove / scroll listeners update transform in App.jsx
+  Classes   : .neon-glow-purple, .neon-glow-lime
+
+  CUSTOM CURSOR
+  ─────────────────────────
+  File      : CustomCursor.jsx
+  Dot size  : 12px × 12px
+  Color     : #E8B3FF (lavender)
+  Glow      : 500px radial purple gradient follows cursor (z-index: -1)
+  Mode      : mix-blend-mode: difference
+  Expand    : On hover over links/buttons, cursor expands to 36px
+
+  MAGNETIC EFFECT (Contact Page)
+  ─────────────────────────
+  Effect    : Social links shift slightly toward the cursor on hover
+  Mechanism : onMouseMove calculates distance from element center × 0.3
+
+  GLASS PANEL
+  ─────────────────────────
+  Class     : .glass-panel
+  Effect    : Background blur + transparent dark surface
+  Properties: backdrop-filter: blur(40px), background: rgba(255,255,255,0.03)
+
+  ANIMATED BORDER
+  ─────────────────────────
+  Class     : .animated-border
+  Effect    : Rotating conic-gradient border on hover
+  Animation : borderRotate — 6s linear infinite (360deg rotation)
+  Color     : #BF40FF
+
+  STEP TRANSITION (StartProject)
+  ─────────────────────────
+  Class     : .step-transition
+  Effect    : Steps fade between opacity-0/-translate-y-10 and opacity-100/translate-y-0
+  Duration  : 0.6s
+  Easing    : cubic-bezier(0.16, 1, 0.3, 1)
+
+  TESTIMONIALS SCROLL
+  ─────────────────────────
+  Container : #testimonials-container
+  Mode      : scroll-snap-type: x mandatory
+  Items     : scroll-snap-align: center
+
+
+────────────────────────────────────────────────────────────────────────────────
+  6. EXTERNAL RESOURCES & DEPENDENCIES
+────────────────────────────────────────────────────────────────────────────────
+
+  FONTS & ICONS (CDN — index.html)
+  ─────────────────────────────────
+  Google Fonts — Inter (400, 500):
+    https://fonts.googleapis.com/css2?family=Inter:wght@400;500
+
+  Google Fonts — Sora (700, 800):
+    https://fonts.googleapis.com/css2?family=Sora:wght@700;800
+
+  Google Fonts — JetBrains Mono (500):
+    https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500
+
+  Google Material Symbols Outlined:
+    https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1
+
+  JAVASCRIPT DEPENDENCIES (package.json)
+  ─────────────────────────────────────────
+  react                    ^18.3.1   — UI framework
+  react-dom                ^18.3.1   — DOM renderer
+  @supabase/supabase-js    latest    — Backend database client (forms)
+
+  DEV DEPENDENCIES
+  ─────────────────────────────────────────
+  vite                     ^5.3.1    — Build tool & dev server
+  @vitejs/plugin-react     ^4.3.1    — Vite React plugin
+  tailwindcss              ^3.4.4    — Utility-first CSS
+  postcss                  ^8.4.38   — CSS processing
+  autoprefixer             ^10.4.19  — CSS vendor prefixes
+  @tailwindcss/forms       ^0.5.7    — Form base styles
+  @tailwindcss/container-queries ^0.1.1 — Container queries plugin
+  sharp (optional)         latest    — Image compression (run compress-images.mjs)
+
+  SUPABASE BACKEND
+  ─────────────────────────────────────────
+  Project URL  : https://wdrsfjgtakhseiahcfen.supabase.co
+  Dashboard    : https://app.supabase.com
+  Tables used  :
+    - contact_inquiries  (name, email, message, created_at)
+    - project_requests   (name, email, challenge, project_type, budget, created_at)
+    - express_bookings   (project_name, budget_range, timeline, created_at)
+
+  IMAGES (local /public directory)
+  ─────────────────────────────────────────
+  olis.png     — Hero portrait photo
+  buildup.webp — BuildUp project screenshot (compressed from buildup.png)
+  rentaly.webp — Rentaly project screenshot (compressed from rentaly.png)
+  whales.webp  — Whales Visual project screenshot (compressed from whales.png)
+
+  NOISE TEXTURE (CSS — external)
+  ─────────────────────────────────────────
+  Source  : Google-hosted noise texture image used in .noise-overlay
+  Purpose : Adds subtle film-grain texture overlay across entire site
+
+
+────────────────────────────────────────────────────────────────────────────────
+  7. SUPABASE TABLE SQL
+  (Run in Supabase Dashboard → SQL Editor)
+────────────────────────────────────────────────────────────────────────────────
+
+  -- Table 1: Contact page inquiries
+  CREATE TABLE IF NOT EXISTS contact_inquiries (
+    id          UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    name        TEXT NOT NULL,
+    email       TEXT NOT NULL,
+    message     TEXT NOT NULL,
+    created_at  TIMESTAMPTZ DEFAULT NOW()
+  );
+
+  -- Table 2: Start Project multi-step form submissions
+  CREATE TABLE IF NOT EXISTS project_requests (
+    id            UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    name          TEXT NOT NULL,
+    email         TEXT NOT NULL,
+    challenge     TEXT NOT NULL,
+    project_type  TEXT,
+    budget        TEXT,
+    created_at    TIMESTAMPTZ DEFAULT NOW()
+  );
+
+  -- Table 3: Express booking submissions
+  CREATE TABLE IF NOT EXISTS express_bookings (
+    id            UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    project_name  TEXT NOT NULL,
+    budget_range  TEXT NOT NULL,
+    timeline      TEXT NOT NULL,
+    created_at    TIMESTAMPTZ DEFAULT NOW()
+  );
+
+  -- Enable Row Level Security and allow anonymous inserts:
+  ALTER TABLE contact_inquiries  ENABLE ROW LEVEL SECURITY;
+  ALTER TABLE project_requests   ENABLE ROW LEVEL SECURITY;
+  ALTER TABLE express_bookings   ENABLE ROW LEVEL SECURITY;
+
+  CREATE POLICY "Allow anon inserts" ON contact_inquiries  FOR INSERT TO anon WITH CHECK (true);
+  CREATE POLICY "Allow anon inserts" ON project_requests   FOR INSERT TO anon WITH CHECK (true);
+  CREATE POLICY "Allow anon inserts" ON express_bookings   FOR INSERT TO anon WITH CHECK (true);
+
+
+================================================================================
+  END OF DESIGN REFERENCE
+================================================================================
