@@ -55,7 +55,7 @@ export default function Testimonials() {
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-secondary flex-shrink-0"></div>
             <div>
-              <p className="font-bold text-white">Marcus Thorne</p>
+              <p className="font-bold text-white">John Elizabeth</p>
               <p className="text-on-surface-variant text-sm">CTO, Aether Systems</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Testimonials() {
             <div className="w-12 h-12 rounded-full bg-tertiary flex-shrink-0"></div>
             <div>
               <p className="font-bold text-white">Elena Vance</p>
-              <p className="text-on-surface-variant text-sm">Design Director, Nexus</p>
+              <p className="text-on-surface-variant text-sm">Design Director, Ux</p>
             </div>
           </div>
         </div>
@@ -89,8 +89,8 @@ export default function Testimonials() {
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-surface-bright flex-shrink-0"></div>
             <div>
-              <p className="font-bold text-white">Jordan Blake</p>
-              <p className="text-on-surface-variant text-sm">Founder, Volt Fashion</p>
+              <p className="font-bold text-white">Oni Tomiwa</p>
+              <p className="text-on-surface-variant text-sm">Founder, EziTom</p>
             </div>
           </div>
         </div>
