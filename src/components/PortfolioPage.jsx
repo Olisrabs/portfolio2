@@ -310,12 +310,12 @@ export default function PortfolioPage() {
             SEE MORE PROJECTS
           </h2>
           <div className="flex flex-wrap justify-center gap-8">
-            <button className="px-12 py-6 glass-panel rounded-full font-label-caps text-white font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-500 cursor-pointer shadow-2xl">
+            <a href="https://www.behance.net/olisrab" className="px-12 py-6 glass-panel rounded-full font-label-caps text-white font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-500 cursor-pointer shadow-2xl">
               BEHANCE ARCHIVE
-            </button>
-            <button className="px-12 py-6 glass-panel rounded-full font-label-caps text-white font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-500 cursor-pointer shadow-2xl">
+            </a>
+            <a href="" className="px-12 py-6 glass-panel rounded-full font-label-caps text-white font-bold tracking-widest hover:bg-white hover:text-black transition-all duration-500 cursor-pointer shadow-2xl">
               DRIBBBLE SHOWCASE
-            </button>
+            </a>
           </div>
         </section>
       </div>
